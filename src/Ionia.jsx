@@ -35,8 +35,8 @@ const Ionia = () => {
   const mouseEvent = (e) => {
     springs.vs.set.start({
       to: {
-        x: -e.movementX / 8,
-        y: -e.movementY / 8,
+        x: -e.movementX / 4,
+        y: -e.movementY / 4,
       },
     });
   };
@@ -79,15 +79,15 @@ const Ionia = () => {
         />
       </Head>
       <audio ref={audio} playsInline loop autoPlay controls={false}>
-        <source src="/audio/papers_out.ogg" type="audio/ogg"></source>
+        <source src="/audio/alone.ogg" type="audio/ogg"></source>
       </audio>
       <div className="min-h-screen flex flex-col items-center justify-center">
         <div className="fixed z-20 top-5 left-5">
           <Button audio={audio} states={states} />
         </div>
         <a.div style={springs.ts.spring} className="fixed z-20 top-20">
-          <p className="font-[Lato] text-white/70 border-white/70 hover:border-white hover:text-white transition-colors text-8xl p-3 border-8 overflow-hidden flex-row-1">
-            skyleraspen.com
+          <p className="font-[Lato] text-white/70 border-white/70 hover:border-white backdrop-blur-3xl hover:text-white transition-colors text-8xl p-3 border-8 overflow-hidden flex-row-1">
+            skyleraspen.org
           </p>
         </a.div>
         <a.div style={springs.ls.spring} className="z-10">

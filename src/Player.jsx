@@ -17,7 +17,7 @@ const Player = ({ states, springs }) => {
         onLoadedData={() => {
           setVideoLoaded(states, springs);
         }}>
-        <source type="video/webm" src="bg/chicago_o.webm" />
+        <source type="video/webm" src="bg/chicago_2.webm" />
       </video>
     </>
   );
